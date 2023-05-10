@@ -1,0 +1,39 @@
+﻿<Window x:Class="ManasKattaFinal.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ManasKattaFinal"
+        mc:Ignorable="d"
+        Height="818" Width="1258"
+        Background="#121212"
+        ResizeMode="NoResize"
+        
+        
+        
+        >
+    <Canvas x:Name="MainCanvas">
+
+
+
+
+
+
+
+
+        <Image Source="Assets/Manhattan.jpg" Height="818" Width="1258" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <TextBlock FontSize="45" FontWeight="DemiBold" Foreground="#FAFAFA" Text="Manas' AI Assistant" Canvas.Left="10" Canvas.Top="16" Height="70" Width="400" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <TextBlock FontSize="16" TextWrapping="WrapWithOverflow" Foreground="#FAFAFA" Text="Hello! Welcome to My AI Assistant app. This app utilizes the OpenAI API and the GPT-3.5-Turbo model to generate responses. Just type in your question into the prompt and press enter and Chat-GPT will answer your every question!" HorizontalAlignment="Center" VerticalAlignment="Top" Width="400" Height="178" Canvas.Left="10" Canvas.Top="91"/>
+
+        <ListView Background="#121212" Margin="415,16,0,0" Height="678" Width="819" x:Name="Message_Canvas" ScrollViewer.HorizontalScrollBarVisibility="Hidden" ScrollViewer.VerticalScrollBarVisibility="Hidden">
+           
+        </ListView>
+
+        <TextBox FontSize="20" Foreground="#a2d4ef" Background="#121212" KeyDown="ChatGPTBox_KeyDown" Name="ChatGPTBox" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Have a question? ask away" VerticalAlignment="Center" Width="771" Height="43" Canvas.Left="415" Canvas.Top="715"/>
+        <Button Click="Button_Click" Content="✔" Height="43" Width="43" Background="#A2D4EF" Canvas.Left="1191" Canvas.Top="715" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+
+
+
+
+    </Canvas>
+</Window>
